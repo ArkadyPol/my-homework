@@ -1,3 +1,64 @@
 .message {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+            ". rect"
+            "img rect";
+}
 
+.image {
+    grid-area: img;
+}
+
+.image img {
+    width: 50px;
+}
+
+.rectangle {
+    width: 250px;
+    background-color: black;
+    position: relative;
+    color: white;
+    border-radius: 15px;
+    grid-area: rect;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+            "name time"
+            "text time";
+}
+
+.rectangle::before {
+    content: "";
+    position: absolute;
+    right: 98%;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 18px solid black;
+    border-bottom: 3px solid transparent;
+}
+
+.name {
+    color: #e529bb;
+    grid-area: name;
+    margin: 5px 5px 0 5px;
+}
+
+.messageText {
+    color: #d7d718;
+    grid-area: text;
+    margin: 5px;
+}
+
+.time {
+    color: greenyellow;
+    grid-area: time;
+    align-self: end;
+    margin-right: 5px;
 }
