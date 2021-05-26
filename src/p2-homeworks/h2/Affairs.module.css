@@ -1,3 +1,22 @@
-.someClass {
+.affairs {
+    width: 300px;
+    margin: 5px;
+    background-color: #1f0424;
+    padding: 5px;
+}
 
+.affairs > button {
+    margin: 5px;
+}
+
+.affair {
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #69adea;
+}
+
+.active {
+    background-color: silver;
+    font-weight: bold;
 }
