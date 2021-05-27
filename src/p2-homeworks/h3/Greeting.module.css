@@ -1,7 +1,30 @@
-.someClass {
+.greeting {
+    display: grid;
+    margin: 5px;
+    width: 270px;
+    grid-template-columns: auto 1fr 20px;
+    grid-template-areas:
+    "input add total"
+    "error . .";
+}
 
+.buttonAdd {
+    grid-area: add;
+    justify-self: center;
+    padding: 0 5px 0 5px;
+}
+
+.total {
+    grid-area: total;
+    justify-self: center;
 }
 
 .error {
     border: 1px solid red;
+    grid-area: input;
+}
+
+.errorMessage {
+    color: red;
+    grid-area: error;
 }
