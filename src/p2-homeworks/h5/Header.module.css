@@ -1,0 +1,29 @@
+.header {
+    margin-left: -220px;
+    transition: margin-left 0.6s;
+}
+
+.header::after {
+    content: '';
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 10px -5px;
+}
+
+.header:hover {
+    margin-left: 0;
+}
+
+.header a {
+    color: #2716bf;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+.header a.active {
+    color: #c426ef;
+}
+
+
