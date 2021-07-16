@@ -1,0 +1,5 @@
+.superSpan {
+    border-bottom: 2px dashed blue;
+    margin: 5px;
+    cursor: pointer;
+}
